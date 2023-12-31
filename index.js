@@ -16,7 +16,6 @@ app.use("/api/auth", authRoutes);
 app.get("/", (req, res) => {
   res.send("Hello, World!");
 });
-
 mongoose
   .connect(process.env.DB_CONNECT)
   .then(() => console.log("Database Connected"))
